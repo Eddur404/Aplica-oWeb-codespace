@@ -1,8 +1,15 @@
-from Flask import Flask
+from flask import Flask, render_template
+
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/index')
 def index():
-    return 'Olá mundo'
+    return render_template('index.html')
 
-# blablabla
+@app.route('/contato')
+def contato():
+    return render_template('contato.html')
+
+if __name__ == '__main__':
+    app.run()
+    
