@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-</head>
-<body>
-    <p>Nome: Eduardo</p>
-    <p>Email: Eduardo@gmail</p>
-</body>
+<html>
+	<head><title>Profa. Alba Lopes</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css')}}">
+        <script src="{{ url_for('static', filename='js/script.js')}}"></script>
+    </head>
+	<body>
+		<img src="{{ url_for('static', filename='img/image-contato.png') }}" onclick="CliqueAqui()"/>
+    
+    <p>
+      E-mail: {{ email }}
+      Email: {{ email }}
+    </p>
+  </body>
 </html>
